@@ -1,21 +1,40 @@
-ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    columns: 100px 4;
-}
+
+ h1 {
+     text-align: center;
+     height: 100px;
+     background-color: lightblue;
+     font-size: 75px;
+ }
+ ul {
+     column-count: 2;
+     column-gap: 20px;
+ }
 
 li {
-    max-height: 310px;
-    max-width: 252px;
+    list-style-type: none;
+    display: table-column 4;
+    max-height: 500px;
+    max-width: 400px;
     padding: 20px;
     border: 2px solid lightgrey;
     border-radius: 20px;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow: scroll;
+    margin: 10px;
 }
 
 li h3 {
     text-decoration: underline;
+}
+
+li img {
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin: 10px;
+}
+
+li #summary {
+    text-align: left;
 }
