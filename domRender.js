@@ -1,12 +1,11 @@
-import bookStock from './books.js';
 
-const productList = document.getElementById('productList');
-const uList = document.createElement('ul');
-productList.append(uList);
+export function domRender(array) {
+    const productList = document.getElementById('productList');
+    const uList = document.createElement('ul');
+    productList.append(uList);
 
-export function domRender() {
-    for (let i = 0; i < bookStock.length; i++) {
-        const currentBook = bookStock[i];
+    for (let i = 0; i < array.length; i++) {
+        const currentBook = array[i];
         
         const list = document.createElement('li');
         const image = document.createElement('img');
@@ -25,10 +24,5 @@ export function domRender() {
         button.value = currentBook.id;
         button.textContent = 'Add to Cart';
         priceText.textContent = currentBook.price;
-
-
-
     }
 }
-
-domRender();
