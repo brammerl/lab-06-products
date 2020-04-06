@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    columns: 100px 4;
+}
+
+li {
+    max-height: 310px;
+    max-width: 252px;
+    padding: 20px;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+li h3 {
+    text-decoration: underline;
+}
