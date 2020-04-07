@@ -1,13 +1,16 @@
 
- h1 {
+ body {
+     background-color:#476A6F;
+ }
+h1 {
      text-align: center;
-     height: 100px;
-     background-color: lightblue;
+     background-color: #519E8A;
      font-size: 75px;
  }
+
  ul {
      column-count: 2;
-     column-gap: 20px;
+     column-gap: 10px;
  }
 
 li {
@@ -16,12 +19,12 @@ li {
     max-height: 500px;
     max-width: 400px;
     padding: 20px;
-    border: 2px solid lightgrey;
+    background-color: #C5C9A4;
     border-radius: 20px;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     overflow: scroll;
-    margin: 10px;
+    margin-top: 20px;
 }
 
 li h3 {
@@ -33,6 +36,7 @@ li img {
     height: 300px;
     float: left;
     margin: 10px;
+    
 }
 
 li #summary {

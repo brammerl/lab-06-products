@@ -1,9 +1,7 @@
 
-export function domRender(array) {
-    const productList = document.getElementById('productList');
-    const uList = document.createElement('ul');
-    productList.append(uList);
-
+export function renderBook(array) {
+    const uList = document.getElementById('productList');
+    
     for (let i = 0; i < array.length; i++) {
         const currentBook = array[i];
         
@@ -24,5 +22,6 @@ export function domRender(array) {
         button.value = currentBook.id;
         button.textContent = 'Add to Cart';
         priceText.textContent = currentBook.price;
+
     }
 }

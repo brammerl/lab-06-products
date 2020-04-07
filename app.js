@@ -1,4 +1,4 @@
 import bookStock from './books.js';
-import { domRender } from './domRender.js';
+import { renderBook } from './renderBook.js';
 
-domRender(bookStock);
+renderBook(bookStock);
